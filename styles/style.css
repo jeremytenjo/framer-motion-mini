@@ -1,0 +1,137 @@
+html,
+body,
+button {
+  padding: 0;
+  margin: 0;
+  font-family: GT Walsheim Trial, -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  font-size: 18px;
+}
+html {
+  background: #151515;
+  color: #b9c9da;
+}
+
+/* Fonts on trial from Grilli Type - grillitype.com */
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  src: url('/GT-Walsheim-Regular-Trial.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'GT Walsheim Trial';
+  src: url('/GT-Walsheim-Bold-Trial.woff2') format('woff2');
+  font-weight: bold;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  color: #151515;
+  background: #ffcd2d;
+}
+
+main {
+  padding-top: 120px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  padding: 8px 0 8px 12px;
+  margin: 8px 0;
+  background: #1a1b1f;
+  border-radius: 4px;
+  border: 1px solid #1f222b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ul li > div {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  color: #687e94;
+  border: none;
+  border-radius: 2px;
+  font-size: 14px;
+  margin-right: 8px;
+  cursor: pointer;
+  width: 36px;
+  padding: 0;
+  padding-bottom: 8px;
+  font-weight: bold;
+}
+
+button:hover {
+  color: #ffcd2d;
+}
+button:focus {
+  outline: none;
+  color: #ffcd2d;
+}
+button .votes {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 16px;
+}
+
+button .votes .number {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.reload {
+  text-align: right;
+}
+
+.menu-trigger {
+  color: #b9c9da;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+}
+.menu-trigger:hover,
+.menu-trigger:focus {
+  color: #fff;
+}
+.menu-trigger:focus,
+.menu-trigger[aria-expanded] {
+  border-color: #1f222b;
+}
+.menu-content {
+  background: #1f222b;
+  border: none;
+  border-radius: 4px;
+  padding: 2px 0;
+  margin-top: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 4px;
+  min-width: 120px;
+  font-size: 14px;
+}
+.menu-item {
+  padding: 8px 12px;
+}
+.menu-item:focus {
+  outline: none;
+  background: #1a1b1f;
+}
